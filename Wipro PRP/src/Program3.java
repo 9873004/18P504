@@ -1,11 +1,25 @@
-
+import java.util.Scanner;
 
 public class Program3 {
-
-	public static void main(String[] args) {
-		int n=Integer.parseInt(args[0])+Integer.parseInt(args[1]);
-		System.out.println("The sum of "+args[0]+" and "+args[1]+" is "+n);
-
+	
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		int number,a,b,c;
+		System.out.println("enter the number");
+		number=s.nextInt();
+		if(number>=9 )
+		{
+			a=number%100;
+			b=a/10;
+			c=Math.abs(b);
+			System.out.println(c);
+		}
+		else
+		{
+			System.out.println("-1");
+		}
+		
 	}
 
 }
